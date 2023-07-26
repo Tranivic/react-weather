@@ -1,11 +1,17 @@
+import SearchBar from "../components/SearchBar/SearchBar";
+import WeatherDisplay from "../components/WeatherDisplay/WeatherDisplay";
+import { Component } from "react";
 import "./App.css";
 
-function App() {
-  return (
-    <>
-      <h1>Ola mundo</h1>
-    </>
-  );
+class App extends Component {
+  render() {
+    return (
+      <section className="app-container">
+        <SearchBar />
+        <WeatherDisplay />
+      </section>
+    );
+  }
 }
 
 export default App;
